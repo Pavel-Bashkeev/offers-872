@@ -1,0 +1,18 @@
+.trimmer{
+  &__present{
+    margin-bottom: 30px;
+  }
+  &-info{
+    padding: 0 20px;
+    &__title{
+      font:700 22px/26px var(--font);
+      color: $black;
+      margin-bottom: 20px;
+    }
+    &__text{
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

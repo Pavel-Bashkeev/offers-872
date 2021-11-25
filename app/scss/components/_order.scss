@@ -1,0 +1,36 @@
+.order{
+  &-steps{
+    max-width: 310px;
+    counter-reset: item;
+  }
+  &-step{
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    &__title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      &-icon{
+        max-width: 46px;
+        flex-shrink: 0;
+        margin-right: 15px;
+      }
+      &-text{
+        font:900 40px/45px var(--font);
+        color: #963636;
+        text-transform: uppercase;
+        &::after{
+          counter-increment: item;
+          content: counter(item);
+
+        }
+      }
+    }
+    &__text{
+      font:400 20px/24px var(--font);
+      color: $black;
+    }
+  }
+}

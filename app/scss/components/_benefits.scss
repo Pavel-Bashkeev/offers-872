@@ -1,0 +1,30 @@
+.benefits{
+  &__title{
+    max-width: 360px;
+  }
+  &__present{
+    margin-bottom: 30px;
+  }
+  &-list{
+    padding: 0 20px;
+    margin-bottom: 30px;
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 30px;
+    }
+      &::before{
+        content:'';
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/dest/icons/list-decor--second.svg');
+        flex-shrink: 0;
+        margin-right: 17px;
+        @extend %bg-cover;
+      }
+    }
+    &__text{
+      font:400 22px/24px var(--font);
+      color: $black;
+    }
+  }
+}
