@@ -20,7 +20,7 @@
     }
     &::before{
       background-image: url('../images/dest/decor-circle-2.png');
-      animation: blinkingSecond .5s infinite ease-in-out;
+      animation: blinkingSecond .7s .3s infinite ease-in-out;
     }
 
     &__info{
@@ -28,6 +28,8 @@
     margin-left: auto;
     text-align: right;
     padding-right: 20px;
+    position: relative;
+    z-index: 1;
     }
     &__title{
       font:400 63px/50px var(--font-product);
@@ -92,6 +94,7 @@
     color: $black;
   }
   &__old {
+    max-width: 110px;
     &-count{
       font: 600 35px/42px var(--font);
     color: #939393;
@@ -100,6 +103,7 @@
   }
 
   &__new {
+    max-width: 100px;
     &-count{
       font: 900 50px/55px var(--font);
     color: $black;
@@ -129,29 +133,7 @@
   }
 }
 
-@media (max-width:450px) {
-  .price {
-    flex-direction: column;
-  }
 
-  .price__old {
-    margin-bottom: 10px;
-    font-size: 50px;
-    line-height: 55px;
-    margin-right: auto;
-  }
-
-  .price__new {
-    margin-left: auto;
-  }
-
-  .discount{
-    position: relative;
-    left: auto;
-  top: auto;
-  transform: translate(0%, 0%);
-  }
-}
 @keyframes blinking {
   0%{
     opacity: 0;
@@ -172,5 +154,20 @@
   }
   100%{
     opacity: 1;
+  }
+}
+
+@media (max-width:390px) {
+  .discount{
+    width: 110px;
+    height: 110px;
+    &-text{
+      font: 900 26px/30px var(--font);
+    }
+  }
+}
+@media (max-width: 361px) {
+  .price{
+    padding: 8px 5px;
   }
 }

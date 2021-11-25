@@ -3,8 +3,13 @@
   margin: 0 auto 35px;
   padding: 0 5px;
   &__btn{
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
     margin:0 auto;
+  }
+  &__label{
+    margin-bottom: 10px;
+    display: block;
   }
   &__input {
     border: 1.14208px solid #963636;
@@ -24,6 +29,6 @@ border-radius: 41px;
   &-text{
     padding-left: 25px;
     font:400 18px / 24px var(--font-second);
-    color: #121212;
+    color: $white;
   }
 }

@@ -1,0 +1,37 @@
+.works{
+  &__info{
+    background-color: #FFB800;
+    padding: 16px 10px;
+    margin-bottom: 20px;
+    &-text{
+      max-width: 375px;
+      margin: 0 auto;
+      text-align: center;
+      font:700 20px/24px var(--font);
+      color: $black;
+    }
+  }
+}
+.works-item{
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__box{
+    background: linear-gradient(90deg, #282626 80%, rgba(255,184,0,0) 100%);
+    z-index: 1;
+    max-width: 75%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    max-width: 214px;
+    margin-left: auto;
+  }
+  &__text{
+    max-width: 275px;
+    color: $white;
+    font:900 20px/24px var(--font);
+  }
+}

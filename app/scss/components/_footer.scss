@@ -1,15 +1,16 @@
 .footer{
-  background-color: #3b3c3e;
+  background-color: #ffffff;
   padding: 20px 0;
-  color: white;
+  color: $black;
   font-size: 14px;
   line-height: 18px;
  font-family: inherit;
 }
 .footer-link {
-  opacity: 0.5;
+  opacity: 0.8;
   text-decoration: underline;
   font-size: 14px;
   line-height: 18px;
   font-family: inherit;
+  color: $black;
 }

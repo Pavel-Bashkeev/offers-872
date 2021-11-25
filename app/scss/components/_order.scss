@@ -1,4 +1,8 @@
 .order{
+  background-color: #fff;
+  &__title{
+    color: $black;
+  }
   &-steps{
     max-width: 310px;
     counter-reset: item;
@@ -19,7 +23,7 @@
       }
       &-text{
         font:900 40px/45px var(--font);
-        color: #963636;
+        color: #ff5151;;
         text-transform: uppercase;
         &::after{
           counter-increment: item;

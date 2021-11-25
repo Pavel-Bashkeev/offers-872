@@ -1,6 +1,9 @@
 .smart-garland{
   &__video{
     margin-bottom: 30px;
+    iframe{
+      width: 100%;
+    }
   }
   &__descr{
     padding: 0 20px;
