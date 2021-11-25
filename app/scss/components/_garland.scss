@@ -1,0 +1,14 @@
+.garland{
+  padding-bottom: 60px;
+  &__descr{
+    background-color: #FFB800;
+    padding: 12px 20px;
+  }
+  &__text{
+    max-width: 350px;
+    text-align: center;
+    font:500 30px/35px var(--font);
+    color: $black;
+    margin: 0 auto;
+  }
+}

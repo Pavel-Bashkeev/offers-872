@@ -1,0 +1,20 @@
+.smart-garland{
+  &__video{
+    margin-bottom: 30px;
+  }
+  &__descr{
+    padding: 0 20px;
+  }
+  &__text{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    font:400 20px/24px var(--font);
+    color: $white;
+    &--accent{
+      font:700 20px/24px var(--font);
+      color: #FFB800;
+      text-transform: uppercase;
+    }
+  }
+}

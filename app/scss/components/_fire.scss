@@ -1,0 +1,29 @@
+.fire{
+  &__title{
+    max-width: 300px;
+  }
+}
+.fire-item{
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__box{
+    background: linear-gradient(90deg, rgba(255,184,0,1) 80%, rgba(255,184,0,0) 100%);
+    z-index: 1;
+    max-width: 75%;
+    padding: 20px;
+  }
+  &__title{
+    font: 900 20px/24px var(--font);
+    color: $black;
+    text-transform: uppercase;
+  }
+  &__text{
+    font:400 20px/24px var(--font);
+    color: $black;
+  }
+  &__img{
+    width: 214px;
+    margin-left: auto;
+  }
+}

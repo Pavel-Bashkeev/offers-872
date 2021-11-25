@@ -1,4 +1,5 @@
 .hero {
+  padding-bottom: 30px;
   &-top {
     min-height: 560px;
     padding: 19px 20px 85px;
@@ -64,9 +65,6 @@
   }
 
   &-bottom {
-    padding-bottom: 60px;
-    z-index: 1;
-    position: relative;
   }
 }
 .sale{
@@ -158,15 +156,21 @@
   0%{
     opacity: 0;
   }
-  100%{
+  50%{
     opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }
 @keyframes blinkingSecond {
   0%{
     opacity: 1;
   }
-  100%{
+  50%{
     opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
